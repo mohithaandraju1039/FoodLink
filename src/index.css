@@ -1,0 +1,227 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ===================================================
+     1. DEFAULT: FRESH FOOD GREEN (Light Mode)
+     =================================================== */
+  :root, [data-theme-preset="food-green"] {
+    --color-brand-50: #ecfdf5;
+    --color-brand-100: #d1fae5;
+    --color-brand-200: #a7f3d0;
+    --color-brand-500: #10b981;
+    --color-brand-600: #059669;
+    --color-brand-700: #047857;
+    --color-brand-800: #065f46;
+    --color-brand-900: #064e3b;
+
+    --bg-app: #f0fdf4; /* Fresh pale green environment */
+    --bg-card: #ffffff;
+    --bg-hover: #e6f4ea;
+    --border-color: #d1e7dd;
+    --text-main: #064e3b;
+    --text-muted: #374151;
+    --text-inverse: #ffffff;
+  }
+
+  /* Fresh Food Green (Dark Mode) */
+  [data-theme-preset="food-green"].dark, :root.dark {
+    --bg-app: #062319;
+    --bg-card: #0c3829;
+    --bg-hover: #124d39;
+    --border-color: #19634a;
+    --text-main: #ecfdf5;
+    --text-muted: #a7f3d0;
+    --text-inverse: #062319;
+  }
+
+  /* ===================================================
+     2. OCEAN BLUE PRESET
+     =================================================== */
+  [data-theme-preset="ocean-blue"] {
+    --color-brand-50: #f0f9ff;
+    --color-brand-100: #e0f2fe;
+    --color-brand-200: #bae6fd;
+    --color-brand-500: #0284c7;
+    --color-brand-600: #0369a1;
+    --color-brand-700: #075985;
+    --color-brand-800: #0c4a6e;
+    --color-brand-900: #0a364f;
+
+    --bg-app: #f0f7ff; /* Soft ocean pale blue environment */
+    --bg-card: #ffffff;
+    --bg-hover: #e0f0fe;
+    --border-color: #bae0fd;
+    --text-main: #0c4a6e;
+    --text-muted: #334155;
+    --text-inverse: #ffffff;
+  }
+
+  [data-theme-preset="ocean-blue"].dark {
+    --bg-app: #071929;
+    --bg-card: #0c2740;
+    --bg-hover: #133959;
+    --border-color: #1a4d75;
+    --text-main: #f0f9ff;
+    --text-muted: #bae6fd;
+    --text-inverse: #071929;
+  }
+
+  /* ===================================================
+     3. ROYAL PURPLE PRESET
+     =================================================== */
+  [data-theme-preset="royal-purple"] {
+    --color-brand-50: #f5f3ff;
+    --color-brand-100: #ede9fe;
+    --color-brand-200: #ddd6fe;
+    --color-brand-500: #7c3aed;
+    --color-brand-600: #6d28d9;
+    --color-brand-700: #5b21b6;
+    --color-brand-800: #4c1d95;
+    --color-brand-900: #3c1272;
+
+    --bg-app: #faf5ff; /* Regal pale lavender environment */
+    --bg-card: #ffffff;
+    --bg-hover: #f3e8ff;
+    --border-color: #e9d5ff;
+    --text-main: #4c1d95;
+    --text-muted: #374151;
+    --text-inverse: #ffffff;
+  }
+
+  [data-theme-preset="royal-purple"].dark {
+    --bg-app: #18092e;
+    --bg-card: #271047;
+    --bg-hover: #371861;
+    --border-color: #4c2282;
+    --text-main: #f5f3ff;
+    --text-muted: #ddd6fe;
+    --text-inverse: #18092e;
+  }
+
+  /* ===================================================
+     4. WARM SUNSET PRESET
+     =================================================== */
+  [data-theme-preset="sunset"] {
+    --color-brand-50: #fff7ed;
+    --color-brand-100: #ffedd5;
+    --color-brand-200: #fed7aa;
+    --color-brand-500: #ea580c;
+    --color-brand-600: #c2410c;
+    --color-brand-700: #9a3412;
+    --color-brand-800: #7c2d12;
+    --color-brand-900: #62220e;
+
+    --bg-app: #fffaf5; /* Warm cream environment */
+    --bg-card: #ffffff;
+    --bg-hover: #ffedd5;
+    --border-color: #fed7aa;
+    --text-main: #7c2d12;
+    --text-muted: #44403c;
+    --text-inverse: #ffffff;
+  }
+
+  [data-theme-preset="sunset"].dark {
+    --bg-app: #2a0e05;
+    --bg-card: #42180a;
+    --bg-hover: #5c2310;
+    --border-color: #7c2e15;
+    --text-main: #fff7ed;
+    --text-muted: #fed7aa;
+    --text-inverse: #2a0e05;
+  }
+
+  /* ===================================================
+     5. TEAL MINT PRESET
+     =================================================== */
+  [data-theme-preset="teal-mint"] {
+    --color-brand-50: #f0fdfa;
+    --color-brand-100: #ccfbf1;
+    --color-brand-200: #99f6e4;
+    --color-brand-500: #0d9488;
+    --color-brand-600: #0f766e;
+    --color-brand-700: #115e59;
+    --color-brand-800: #134e4a;
+    --color-brand-900: #123e3b;
+
+    --bg-app: #f2fcf9; /* Pale teal mint environment */
+    --bg-card: #ffffff;
+    --bg-hover: #ccfbf1;
+    --border-color: #99f6e4;
+    --text-main: #134e4a;
+    --text-muted: #334155;
+    --text-inverse: #ffffff;
+  }
+
+  [data-theme-preset="teal-mint"].dark {
+    --bg-app: #042422;
+    --bg-card: #093835;
+    --bg-hover: #0e4e4a;
+    --border-color: #146661;
+    --text-main: #f0fdfa;
+    --text-muted: #99f6e4;
+    --text-inverse: #042422;
+  }
+
+  /* ===================================================
+     6. MIDNIGHT DARK PRESET
+     =================================================== */
+  [data-theme-preset="midnight"] {
+    --color-brand-50: #e0e7ff;
+    --color-brand-100: #c7d2fe;
+    --color-brand-200: #a5b4fc;
+    --color-brand-500: #4338ca;
+    --color-brand-600: #3730a3;
+    --color-brand-700: #312e81;
+    --color-brand-800: #1e1b4b;
+    --color-brand-900: #141238;
+
+    --bg-app: #f4f5fc; /* Cool slate environment */
+    --bg-card: #ffffff;
+    --bg-hover: #e0e7ff;
+    --border-color: #c7d2fe;
+    --text-main: #1e1b4b;
+    --text-muted: #334155;
+    --text-inverse: #ffffff;
+  }
+
+  [data-theme-preset="midnight"].dark {
+    --bg-app: #090d1f;
+    --bg-card: #111736;
+    --bg-hover: #1a2350;
+    --border-color: #26336e;
+    --text-main: #e0e7ff;
+    --text-muted: #a5b4fc;
+    --text-inverse: #090d1f;
+  }
+}
+
+body {
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Global Focus outline accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-500);
+  outline-offset: 2px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-app);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
